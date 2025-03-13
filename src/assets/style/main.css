@@ -47,26 +47,28 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 2em;
-    
 }
 
-/* -------------------------------------------------------------- */
+main {
+    padding: var(--secMeasure);
+    border-radius: 1em;
+    border: .1em solid var(--color-primary);
+}
 
 .tab-content {
-    border: 3px solid red;
-    padding: 30px;
     display: none;
-    /* height: 100vh; */
-    /* overflow-y: auto; */
+}
+
+.tab-content .text {
+    /* border: 3px solid red; */
+    width: 30em;
+    margin-top: var(--rdMeasure);
+    height: 10em;
 }
 
 .active {
     display: block;
 }
-
-/* -------------------------------------------------------------- */
-
-
 
 main ul {
     display: flex;
@@ -82,5 +84,5 @@ ul li .tab {
 }
 
 .img-refeering-text {
-    width: 10em;
+    width: 30%;
 }
