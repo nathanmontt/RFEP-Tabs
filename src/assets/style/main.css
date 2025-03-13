@@ -34,9 +34,38 @@
     --mainFont: "Roboto", serif;
 }
 
-/* body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-} */
+}
+
+.btn-primary {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+main {
+    width: 50em;
+    border: 3px solid red;
+}
+
+main ul {
+    display: flex;
+}
+
+main ul li {}
+li .tabs {}
+
+#content {}
+#content .st, .ft, .tt, .fot {}
+
+.text {
+    border: 3px solid blue;
+}
+
+.img-refeering-text {
+    width: 5em;
+}
