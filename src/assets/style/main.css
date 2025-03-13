@@ -15,11 +15,11 @@
 
 :root {
     /* Colors */
-    --primary: #171717;
-    --secondary: #ededed;
-    --tertiary: #1569c8;
-    --grayColor: #ababab;
-    --todoBackground: #b9b9b9;
+    --color-primary: #171717;
+    --color-secondary: #ededed;
+    --color-tertiary: #1569c8;
+    --color-grayColor: #ababab;
+    --color-todoBackground: #b9b9b9;
 
     /* Measures */
     --mainMeasure: 1em;
@@ -28,17 +28,11 @@
     --rdMeasure: 0.5em;
     --thMeasure: 0.2em;
     --diffMeasure: 0.01em;
-    --fontSizeTitle: 1.5em;
+    --fontSizeMain: 1.1em;
+    --fontSizeSecMain: 1.5em;
 
     /* Fonts */
     --mainFont: "Roboto", serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .btn-primary {
@@ -47,25 +41,46 @@ body {
     border: none;
 }
 
-main {
-    width: 50em;
-    border: 3px solid red;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2em;
+    
 }
+
+/* -------------------------------------------------------------- */
+
+.tab-content {
+    border: 3px solid red;
+    padding: 30px;
+    display: none;
+    /* height: 100vh; */
+    /* overflow-y: auto; */
+}
+
+.active {
+    display: block;
+}
+
+/* -------------------------------------------------------------- */
+
+
 
 main ul {
     display: flex;
+    margin-bottom: var(--secMeasure);
 }
 
-main ul li {}
-li .tabs {}
+main ul li {
+    margin-right: 1em;
+}
 
-#content {}
-#content .st, .ft, .tt, .fot {}
-
-.text {
-    border: 3px solid blue;
+ul li .tab {
+    font-size: var(--fontSizeMain);
 }
 
 .img-refeering-text {
-    width: 5em;
+    width: 10em;
 }
