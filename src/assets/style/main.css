@@ -18,15 +18,15 @@
     --color-primary: #171717;
     --color-secondary: #ededed;
     --color-tertiary: #1569c8;
-    --color-grayColor: #ababab;
+    --color-gray: #ababab;
     --color-todoBackground: #b9b9b9;
 
     /* Measures */
     --mainMeasure: 1em;
-    --secMainMeasure: 3em;
-    --secMeasure: 2em;
-    --rdMeasure: 0.5em;
-    --thMeasure: 0.2em;
+    --secondMeasure: 2em;
+    --thirdMeasure: 3em;
+    --smallMeasure: 0.5em;
+    --smallerMeasure: 0.2em;
     --diffMeasure: 0.01em;
     --fontSizeMain: 1.1em;
     --fontSizeSecMain: 1.5em;
@@ -35,11 +35,27 @@
     --mainFont: "Roboto", serif;
 }
 
+/* ---------------------------------------------------------------- */
 .btn-primary {
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
+
+.tab {
+    color: var(--color-gray);
+}
+
+.tab:focus {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.tab:hover {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+}
+/* ---------------------------------------------------------------- */
 
 body {
     display: flex;
@@ -50,20 +66,15 @@ body {
 }
 
 main {
-    padding: var(--secMeasure);
-    border-radius: 1em;
-    border: .1em solid var(--color-primary);
+    padding: var(--secondMeasure);
+    /* border-radius: .5em; */
+    border: 0.01em solid var(--color-primary);
+    width: 50em;
 }
 
 .tab-content {
     display: none;
-}
-
-.tab-content .text {
-    /* border: 3px solid red; */
-    width: 30em;
-    margin-top: var(--rdMeasure);
-    height: 10em;
+    margin-top: var(--thirdMeasure);
 }
 
 .active {
@@ -72,17 +83,15 @@ main {
 
 main ul {
     display: flex;
-    margin-bottom: var(--secMeasure);
+    position: fixed;
 }
 
 main ul li {
-    margin-right: 1em;
-}
-
-ul li .tab {
-    font-size: var(--fontSizeMain);
+    margin: 0 1em 1em 0;
 }
 
 .img-refeering-text {
-    width: 30%;
+    width: 100%;
+    display: grid;
+    place-self: center;
 }
